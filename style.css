@@ -1,0 +1,568 @@
+
+
+/*autocomplete css*/
+.Yes {
+    background-color: #EEE !important;
+    color: black !important;
+    padding-left: 5px;
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    font-size: large;
+}
+
+.ver {
+    position: relative;
+    right:-40%;
+    font-weight: 700;
+    top:5px;
+}
+.mapimg {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 35px;
+    bottom: 30%;
+    cursor: pointer;
+}
+#map {
+    height: 40rem;
+    margin-top: 30px;
+    margin-left: 20px;
+    border-radius: 1rem;
+}
+#map2 {
+    display: none;
+}
+
+.ui-helper-hidden-accessible { display:none; }
+
+.itemlabelcss {
+    font-size: 10px;
+    padding-left: 10px;
+    overflow-x: hidden;
+}
+
+.ui-menu-focus {
+    background-color: #2d3131;
+}
+.ui-autocomplete {
+    overflow-x: scroll;
+    border: 1px solid gray;
+    background-color: white;
+    padding-left: 0px;
+    position: absolute;
+    cursor: default;
+    z-index: 300 !important;
+}
+
+.ui-widget {
+    font-family: 'Montserrat';
+    font-size: 10px;
+}
+
+.ui-menu {
+    max-height: 600px;
+    max-width: 1000px;
+    border: 1px solid grey;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.ui-autocomplete-category {
+    padding-left: 5px;
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #006187 !important;
+    color: white !important;
+}
+
+.ui-menu .ui-menu-item {
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 200;
+    max-height: 50px;    
+    min-height: 50px;  
+    overflow: hidden;
+    border-bottom: 1px solid lightgray;
+    cursor: pointer;
+    width: 100%;
+}
+
+.ui-menu-item {
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+/*end autocomplete css*/
+
+.red {
+    color: green;
+    position: relative;
+    right:-50% !important;
+}
+.g {
+    right:-50% !important;
+    color: green;
+}
+.y {
+    right:-50% !important;
+    color: 	#FFBF00;
+}
+body {
+    font-family: 'Inter', sans-serif !important;
+}
+#big {
+    display: flex;
+}
+#header {
+    display: flex;
+    font-size: 3rem;
+    margin-block: 25px;
+    margin-inline: 1rem;
+    color: #4477ff;
+    font-weight: 700;
+}
+#exchange {
+    color: black;
+}
+.searchbar {
+    width: 100%;
+    border-radius: 1rem;
+    margin-left: 1rem;
+}
+
+.supplier {
+    width: 97%;
+    height: 15rem;
+    border-radius: 1rem;
+    background-color: #EEEEEE;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-right: 0px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+#search {
+    display: none;
+    z-index: 99999;
+    height: 2rem;
+    width:2rem;
+    position: relative;
+    left: -5%;
+    bottom: -20%;
+    cursor: pointer;
+}
+#search :hover {
+    cursor: pointer;
+}
+
+#searchinput-dropdown {
+    z-index: 99998;
+}
+.searchcontainer {
+    position: relative;
+}
+
+#creds {
+    display: none;
+    margin-block: 2rem;
+    margin-left: 1rem;
+    position: relative;
+    font-weight: 700;
+}
+#newsearch {
+    font-size: 1.5rem;
+    width: 98.5%;
+    border: none;
+    background-color: white;
+    height:4rem;
+    padding-left: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 25%);
+}
+
+#topsectioncreds {
+        display: block;
+    }
+
+#crowdsourced {
+    position: relative;
+    left: 1%;
+    margin-top: 10px;
+    color: white;
+    background-color: #f44 ;
+    border-radius: 1rem;
+    font-weight: 700;
+    width:95%;
+}
+
+#text123 {
+    padding: 15px;
+}
+
+#now {
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+#now2 {
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.name {
+    color: #47f;
+    padding-left: 35px;
+    padding-top: 30px;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.city {
+    color: black;
+    padding-left: 35px;
+    padding-top: 0px;
+    margin-top:-5px;
+}
+.person {
+    color: #47f;
+    padding-left: 35px;
+    padding-top: 0px;
+    margin-top:-35px;
+}
+.number {
+    position: relative;
+    bottom: 11%;
+    left:15%;
+    display: flex;
+    color: black;
+    font-weight: normal;
+}
+/* .special {
+    font-size: large;
+}
+.restofnum {
+    font-size: small;
+    position: relative;
+    top:7px;
+} */
+.rest {
+    border-radius: 1rem;
+    height: 60rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: 1rem;
+}
+#disclaimer {
+    padding-top: 5px;
+    padding-left: 25px;
+    color: white;
+    text-align: center;
+}
+#restd {
+    font-weight: 600;
+}
+
+a {
+    padding-top: 0;
+    margin-top: 0;
+    color: white;
+}
+
+#floating-panel {
+    display: none;
+}
+#footer {
+    display: none;
+}
+
+#footer2 {
+    display: block;
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: #f44;
+    font-size: 0.75rem;
+}
+
+.ver {
+    position: relative;
+    margin-left: -10px;
+    margin-right: 5px;
+    font-weight: 700;
+    top:-27%;
+    }
+
+
+@media only screen and (max-width: 1750px) {
+    
+    .x1 {
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    #topsectioncreds {
+        display: block;
+    }
+
+    #crowdsourced {
+        position: relative;
+        padding-top: 0px;
+        margin-left: 17px;
+        padding-left: 17px;
+        font-weight: 700;
+        width:35rem;
+    }
+    
+    .ver {
+        position: relative;
+        font-weight: 700;
+        top:-5%;
+        margin-left: 5px;
+    }
+    .red {
+        color: green;
+        position: relative;
+        left: 30px;
+    }
+    .g {
+        position: relative;
+        top:5%;
+        left: 30px;
+    }
+    .y {
+        position: relative;
+        top:0%;
+        left: 30px;
+    }
+    .supplier {
+        height: 20rem;
+    }
+    .mapimg {
+        margin-top: 5px;
+        top: -13%;
+    }
+    .number {
+        top: 2%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    
+    body{overflow-y:scroll;position:relative}
+
+    #disclaimer {
+            padding-top: 5px;
+            padding-left: 5px;
+            color: white;
+            text-align: center;
+    }
+
+    .ui-menu {
+        max-height: 600px;
+        max-width: 300px;
+        border: 1px solid grey;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+
+    .ui-menu .ui-menu-item {
+        padding-left: 10px;
+        display: flex;
+        align-items: center;
+        font-size: 13px;
+        font-weight: 200;
+        max-height: 50px;    
+        min-height: 50px;  
+        overflow: auto;
+        border-bottom: 1px solid lightgray;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .ui-menu-item {
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    #map {
+        margin:auto;
+        height: 40rem;
+        margin-top: 25px;
+        margin-left: 0px;
+        position: relative;
+    }
+    #big {
+        display: block;
+        margin-bottom:100px;
+        padding-bottom:10px;
+    }
+    #header {
+        display: flex;
+        font-size: 2rem;
+        color: #4477ff;
+        font-weight: 700;
+        justify-content: center;
+    }
+    .searchbar {
+        width: 100%;
+        border-radius: 10px;
+        margin-left: 0px;
+    }
+    #newsearch {
+            font-size: 1rem;
+            width: 100%;
+            border: none;
+            margin-inline: auto auto;
+            background-color: white;
+            height:4rem;
+            border-radius: 1rem;
+            box-shadow: 0.5 0.5rem 1rem rgb(0 0 0 / 25%);
+            -webkit-appearance: none;
+    }
+
+
+    #search {
+        display: none;
+        z-index: 99999;
+        height: 2rem;
+        width:2rem;
+        position: relative;
+        cursor: pointer;
+        bottom: 30%;
+        left:80%;
+    }
+
+    #creds {
+        font-weight: normal;
+        display: none;
+    }
+    
+    #crowdsourced {
+        position: relative;
+        padding-top: 25px;
+        margin-top: 15px;
+        font-weight: 700;
+        font-size: 0.75rem;
+        width: 92%;
+        text-align: left;
+        display: inline-block;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-bottom: 15px;
+    }
+
+    .supplier {
+        width: 100%;
+        height: 17rem;
+        border-radius: 20px;
+        background-color: #EEEEEE;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    .ver {
+        position: relative;
+        margin-left: -10px;
+        margin-right: 5px;
+        font-weight: 700;
+        top:-10%;
+    }
+    .red {
+        color: green;
+        position: relative;
+        left: 20px !important;
+    }
+    .y, .g {
+        left: 20px !important;
+    }
+
+    .name {
+        color: #47f;
+        padding-left: 10px;
+        padding-top: 20px;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    .city {
+        color: black;
+        position: relative;
+        padding-left: 10px;
+    }
+
+    .person {
+        color: #47f;
+        padding-left: 10px;
+        position: relative;
+    }
+    .spec {
+        position: relative;
+    }
+    @media only screen and (max-width: 400px) {
+        .person {
+            position: relative;
+        }
+    }
+    .number {
+        position: relative;
+        top: -5%;
+        left:20%;
+        display: flex;
+        color: black;
+        font-weight: normal;
+    }
+    .restofnum {
+        color: black !important;
+    }
+    .rest {
+        height: 45rem;
+        overflow-y: scroll;
+    }
+    .mapimg {
+        position: relative;
+        top: -22%;
+        width: 2rem;
+        height: 2rem;
+        margin-left: 15px;
+        cursor: pointer;
+        z-index: 2;
+    }
+    .b {
+        color:white;
+    }
+
+    #footer2 {
+        margin:auto;
+        font-size: 0.6rem;
+        z-index: 3;
+    } 
+    .br2 {
+        display: none;
+    }
+    #restd {
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+}
+.input-icons i {
+    position: absolute;
+}
+    
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+    
+.icon {
+    font-size: 2rem;
+}
