@@ -297,131 +297,133 @@ function makesimilars(arr, istherecity, city) {
   div.innerHTML = '';
   for (var i=0; i < arr.length; i++) {
      var it = arr[i];
-     var big = document.createElement('div');
-     big.className = 'row supplier';
-     if (it.verified == 'Verified') {
-        color = 'g'
-     }
-     else {
-        color = 'y'
-     }
-     if (it.verified == 'No') {
-        var mq = window.matchMedia( "(max-width: 768px)" );
-        if (mq.matches) {
-              big.innerHTML = `
-                       <div class='row supplier'>
-                          <h1 class='name'> ${it.value} </h1>
-                          <p class='city'>City: ${it.city}</p>
-                          <br>
-                          <p class='person'>From: ${it.person}</p>
-                          <br>
-                          <p class='ver red'>Verification Status: <br> Verified last on 27/04/2023</p
-                          <br>
-                          <div class='number'>
-                             <a href='tel:+91${it.phone}' class='restofnum'>+91${it.phone}</a>
-                          </div>
-                          <img class='mapimg' src='google_maps.png' id='${it.label}' class='geocoding'/>
-                       </div>
-              `
-           }
-           else {
-              big.innerHTML = `
-                       <div class='row supplier'>
-                          <h1 class='name'> ${it.value} </h1>
-                          <p class='city'>City: ${it.city}</p>
-                          <br>
-                          <p class='person'>From: ${it.person}</p>
-                          <br>
-                          <p class='ver red'>Verification Status: Verified last on 27/04/2023</p
-                          <br>
-                          <div class='number'>
-                             <p class='special'>+91</p>
-                             <p class='restofnum'>${it.phone}</p>
-                          </div>
-                          <img class='mapimg' src='google_maps.png' id='${it.label}' class='geocoding'/>
-                       </div>
-              `
-           }
-     }
-     else {
-        if (it.verifiedon == null) {
-              var mq = window.matchMedia( "(max-width: 768px)" );
-              if (mq.matches) {
-                 big.innerHTML = `
+     if (!(it.person == null)) {
+        var big = document.createElement('div');
+        big.className = 'row supplier';
+        if (it.verified == 'Verified') {
+            color = 'g'
+        }
+        else {
+            color = 'y'
+        }
+        if (it.verified == 'No') {
+            var mq = window.matchMedia( "(max-width: 768px)" );
+            if (mq.matches) {
+                big.innerHTML = `
                         <div class='row supplier'>
                             <h1 class='name'> ${it.value} </h1>
                             <p class='city'>City: ${it.city}</p>
                             <br>
                             <p class='person'>From: ${it.person}</p>
                             <br>
-                            <p class='ver ${color}'>Verification Status: <br> ${it.verified} Date Unknown</p>
+                            <p class='ver red'>Verification Status: <br> Verified last on 27/04/2023</p
+                            <br>
                             <div class='number'>
-                             <a href='tel:+91${it.phone}' class='restofnum'>+91${it.phone}</a>
+                                <a href='tel:+91${it.phone}' class='restofnum'>+91${it.phone}</a>
                             </div>
                             <img class='mapimg' src='google_maps.png' id='${it.label}' class='geocoding'/>
                         </div>
-              `
-              }
-              else {
-                 big.innerHTML = `
+                `
+            }
+            else {
+                big.innerHTML = `
                         <div class='row supplier'>
                             <h1 class='name'> ${it.value} </h1>
                             <p class='city'>City: ${it.city}</p>
                             <br>
                             <p class='person'>From: ${it.person}</p>
                             <br>
-                            <p class='ver ${color}'>Verification Status: ${it.verified} - Date Unknown</p>
+                            <p class='ver red'>Verification Status: Verified last on 27/04/2023</p
+                            <br>
                             <div class='number'>
                                 <p class='special'>+91</p>
                                 <p class='restofnum'>${it.phone}</p>
                             </div>
                             <img class='mapimg' src='google_maps.png' id='${it.label}' class='geocoding'/>
                         </div>
-              `
-
-              }
+                `
+            }
         }
         else {
-              var mq = window.matchMedia( "(max-width: 768px)" );
-              if (mq.matches) {
-                 big.innerHTML = `
-                          <div class='row supplier'>
-                             <h1 class='name'> ${it.value} </h1>
-                             <p class='city'>City: ${it.city}</p>
-                             <br>
-                             <p class='person spec'>From: ${it.person}</p>
-                             <br>
-                             <p class='ver ${color}'>Verification Status:
-                             <br class='there'> ${it.verified} last on: ${formatDate(it.verifiedon.substring(0,10))}</p>
-                             <div class='number'>
+            if (it.verifiedon == null) {
+                var mq = window.matchMedia( "(max-width: 768px)" );
+                if (mq.matches) {
+                    big.innerHTML = `
+                            <div class='row supplier'>
+                                <h1 class='name'> ${it.value} </h1>
+                                <p class='city'>City: ${it.city}</p>
+                                <br>
+                                <p class='person'>From: ${it.person}</p>
+                                <br>
+                                <p class='ver ${color}'>Verification Status: <br> ${it.verified} Date Unknown</p>
+                                <div class='number'>
                                 <a href='tel:+91${it.phone}' class='restofnum'>+91${it.phone}</a>
-                             </div>
-                             <img class='mapimg' src='google_maps.png' id='${it.label}' class='geocoding'/>
-                          </div>
-                             `
-              }
-              else {
-                 big.innerHTML = `
-                          <div class='row supplier'>
-                             <h1 class='name'> ${it.value} </h1>
-                             <p class='city'>City: ${it.city}</p>
-                             <br>
-                             <p class='person spec'>From: ${it.person}</p>
-                             <p class='ver ${color} x1'>Verification Status: ${it.verified} 
-                              - Last on: ${formatDate(it.verifiedon.substring(0,10))}</p>
-                             <br>
-                             <div class='number'>
-                                   <p class='special'>+91</p>
-                                   <p class='restofnum'>${it.phone}</p>
-                             </div>
-                             <img class='mapimg' src='google_maps.png' id='${it.label}' class='geocoding'/>
-                          </div>
-              `
-              }
+                                </div>
+                                <img class='mapimg' src='google_maps.png' id='${it.label}' class='geocoding'/>
+                            </div>
+                `
+                }
+                else {
+                    big.innerHTML = `
+                            <div class='row supplier'>
+                                <h1 class='name'> ${it.value} </h1>
+                                <p class='city'>City: ${it.city}</p>
+                                <br>
+                                <p class='person'>From: ${it.person}</p>
+                                <br>
+                                <p class='ver ${color}'>Verification Status: ${it.verified} - Date Unknown</p>
+                                <div class='number'>
+                                    <p class='special'>+91</p>
+                                    <p class='restofnum'>${it.phone}</p>
+                                </div>
+                                <img class='mapimg' src='google_maps.png' id='${it.label}' class='geocoding'/>
+                            </div>
+                `
+
+                }
+            }
+            else {
+                var mq = window.matchMedia( "(max-width: 768px)" );
+                if (mq.matches) {
+                    big.innerHTML = `
+                            <div class='row supplier'>
+                                <h1 class='name'> ${it.value} </h1>
+                                <p class='city'>City: ${it.city}</p>
+                                <br>
+                                <p class='person spec'>From: ${it.person}</p>
+                                <br>
+                                <p class='ver ${color}'>Verification Status:
+                                <br class='there'> ${it.verified} last on: ${formatDate(it.verifiedon.substring(0,10))}</p>
+                                <div class='number'>
+                                    <a href='tel:+91${it.phone}' class='restofnum'>+91${it.phone}</a>
+                                </div>
+                                <img class='mapimg' src='google_maps.png' id='${it.label}' class='geocoding'/>
+                            </div>
+                                `
+                }
+                else {
+                    big.innerHTML = `
+                            <div class='row supplier'>
+                                <h1 class='name'> ${it.value} </h1>
+                                <p class='city'>City: ${it.city}</p>
+                                <br>
+                                <p class='person spec'>From: ${it.person}</p>
+                                <p class='ver ${color} x1'>Verification Status: ${it.verified} 
+                                - Last on: ${formatDate(it.verifiedon.substring(0,10))}</p>
+                                <br>
+                                <div class='number'>
+                                    <p class='special'>+91</p>
+                                    <p class='restofnum'>${it.phone}</p>
+                                </div>
+                                <img class='mapimg' src='google_maps.png' id='${it.label}' class='geocoding'/>
+                            </div>
+                `
+                }
+            }
         }
+        console.log(big);
+        div.append(big);
      }
-     console.log(big);
-     div.append(big);
   }
   const map = new google.maps.Map(document.getElementById("map"), {
      zoom: 10,
