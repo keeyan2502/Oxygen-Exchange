@@ -315,7 +315,7 @@ function makesimilars(arr, istherecity, city) {
                           <br>
                           <p class='person'>From: ${it.person}</p>
                           <br>
-                          <p class='ver red'>Verification Status: <br> Verified last on 27/04/2021</p
+                          <p class='ver red'>Verification Status: <br> Verified last on 27/04/2023</p
                           <br>
                           <div class='number'>
                              <a href='tel:+91${it.phone}' class='restofnum'>+91${it.phone}</a>
@@ -332,7 +332,7 @@ function makesimilars(arr, istherecity, city) {
                           <br>
                           <p class='person'>From: ${it.person}</p>
                           <br>
-                          <p class='ver red'>Verification Status: Verified last on 27/04/2021</p
+                          <p class='ver red'>Verification Status: Verified last on 27/04/2023</p
                           <br>
                           <div class='number'>
                              <p class='special'>+91</p>
