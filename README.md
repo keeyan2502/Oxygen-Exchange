@@ -8,4 +8,4 @@ Onto the coding, this was the first project I made where I truly focused on maki
 
 While, fortunately, the website is no longer needed and therefore is no longer hosted on the original domain, a fully working copy of the website can be found here: 
 
-https://github.com/keeyan2502/Portfolio-Optimization
+https://github.com/keeyan2502/Oxygen-Exchange
