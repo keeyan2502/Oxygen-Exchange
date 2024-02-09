@@ -1,6 +1,6 @@
 # Oxygen-Exchange
 
-# IMPORTANT: Oxygen Exchange was bought up, so this code is an older version for demonstration purposes, in plain HTML/CSS/JavaScript
+# IMPORTANT: Oxygen Exchange was repurposed commercially, so this code is an older version for demonstration purposes, in plain HTML/CSS/JavaScript
 
 At the height of the devastating wave of Delta COVID-19 in 2022, oxygen became scarce among the entirety of India as hospitals began to withhold it for a select few patients, leaving the masses to die. The community came together in many ways during this time, whether it was donating plasma, providing shelter, or giving medicine. 
 
